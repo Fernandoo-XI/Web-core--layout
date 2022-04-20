@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Regular.woff') format('woff'),
+        url('fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes M2';
+    src: url('fonts/fonts/TTLakesCondensed-DemiBold.eot');
+    src: local('TT Lakes Condensed DemiBold'), local('TTLakesCondensed-DemiBold'),
+        url('fonts/TTLakesCondensed-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakesCondensed-DemiBold.woff') format('woff'),
+        url('fonts/TTLakesCondensed-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes B1';
+    src: url('fonts/TTLakes-ExtraBold.eot');
+    src: local('TT Lakes ExtraBold'), local('TTLakes-ExtraBold'),
+        url('fonts/TTLakes-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-ExtraBold.woff') format('woff'),
+        url('fonts/TTLakes-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes M1';
+    src: url('fonts/TTLakesCondensed-Medium.eot');
+    src: local('TT Lakes Condensed Medium'), local('TTLakesCondensed-Medium'),
+        url('fonts/TTLakesCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakesCondensed-Medium.woff') format('woff'),
+        url('fonts/TTLakesCondensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    margin:  0;
+}
+
+.burger {
+    width:  320px;
+    border:  1px solid #ffffff;
+    box-shadow: 0 0 50px -5px #808080;
+    z-index: 100;
+}
+
+
+.menu__burger-close {
+    position:  absolute;
+    top:  23px;
+    left:  24px;
+    width:  40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+}
+
+.menu__burger-close::before,
+.menu__burger-close::after {
+    position:  absolute;
+    top:  19px;
+    left:  8px;
+    width:  22px;
+    border:  1px solid white;
+    background-color: white;
+    content:  "";
+    z-index: 100;
+    transform: rotate(45deg);
+}
+
+.menu__burger-close::after{
+    transform: rotate(-45deg);
+}
+
+.menu__icon {
+    position: absolute;
+    top:  18.73px;
+    left: 80.73px;
+}
+
+.menu__search {
+    position:  absolute;
+    left:  256px;
+    top:  23px;
+}
+
+
+.content__list {
+    list-style: none;
+    margin-top:  120px;
+    
+}
+
+ul.content__list  {
+    padding-left: 0;
+}
+
+.content__list li {
+    padding-bottom: 32px;
+    
+}
+
+.content__list a {
+    text-decoration: none;
+    font-family: 'TT Lakes M1';
+    font-size: 18px;
+    line-height: 24px;
+    
+    color: #1B1C21;
+    padding-left: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.content__list .active-part a {
+    border-left: 4px solid #41F6D7;
+}
+
+
+.burger__wrapper {
+    display:  flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper__content{
+    flex: 1;
+}
+
+.burger__foot-menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.burger__foot-menu .foot-menu__part:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.burger__foot-menu .foot-menu__part:nth-child(1) div {
+    margin-right: 16px;
+}
+
+.part__email {
+    font-family: 'TT Lakes M1';
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.part__phone {
+    font-family: 'TT Lakes B1';
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.part__language a {
+    text-decoration: none;
+    font-family: 'TT Lakes M1';
+    font-size: 18px;
+    line-height: 24px;
+    padding-right: 7px;
+    color: #1B1C21;
+}
+
+.part__language .active {
+    color: #7E7E82;
+}
+
+.part__language a:hover {
+    color: #7E7E82;
+}
+
+
+
+.content__list a:hover {
+    border-left: 4px solid #41F6D7;
+}
+
+.menu__icon:hover {
+    filter:  drop-shadow(1px 1px);
+}
+
+.menu__search:hover {
+    filter: hue-rotate(240deg);
+}
+
+.part__call:hover {
+    filter: hue-rotate(240deg);
+}
+
+.part__chat:hover {
+    filter: hue-rotate(240deg);
+}
+
+.part__profile:hover {
+    filter: hue-rotate(240deg);
+}
+
+
+.menu__burger-close:hover {
+    transform:  scale(1.1);
+}
